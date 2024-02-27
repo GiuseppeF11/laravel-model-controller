@@ -3,25 +3,30 @@
 @section('page-title', $movie->title)
 
 @section('main-content')
-<h1>
-    {{ $movie->title }}
-</h1>
 
-<div class="row">
-
-    <div class="col-12 col-sm-3">
-        <div class="card">
-            <h3>{{ $movie->title }}</h3>
-            <div class="card-body">
-                <h4>
-                    {{ $movie->original_title }}
-                </h4>
+    <main>
+        <div class="container">
+            <h1>
+                {{ $movie->title }}
+            </h1>
+            <a href="/movies" class="btn btn-primary ">
+                Torna alla lista
+            </a>
+            <div class="row">
+                <div class="col-12 col-sm-3 mb-3 ">
+                    <div class="card">
+                        <h3>
+                            {{ $movie->title }}
+                        </h3>
+                        <p>
+                            {{ $movie->date }}
+                        </p>
+                        <p>
+                            {{ $movie->vote }}
+                        </p>
+                    </div>
+                </div>
             </div>
-            <p>
-                {{ $movie->date }}
-            </p>
         </div>
-    </div>
-
-</div>
+    </main>
 @endsection

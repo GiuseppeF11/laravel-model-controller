@@ -6,7 +6,7 @@
             'active' => true,
         ],
         [
-            'url' => '/chi-siamo',
+            'url' => '/about',
             'label' => 'Chi siamo',
             'active' => true,
         ],
